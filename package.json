@@ -4,7 +4,7 @@
     "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/marmelab/react-admin.git"
+        "url": "git+https://github.com/gucarletto/ra-language-pt-br.git"
     },
     "main": "lib/index.js",
     "module": "esm/index.js",
@@ -27,7 +27,7 @@
     "author": "Gustavo Carletto",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/marmelab/react-admin/issues"
+        "url": "https://github.com/gucarletto/ra-language-pt-br/issues"
     },
-    "homepage": "https://github.com/marmelab/react-admin#readme"
+    "homepage": "https://github.com/gucarletto/ra-language-pt-br#readme"
 }
