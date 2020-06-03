@@ -1,28 +1,29 @@
 {
     "name": "ra-language-pt-br",
-    "version": "3.5.2",
+    "version": "1.2.0",
     "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gucarletto/ra-language-pt-br.git"
     },
-    "main": "lib/index.js",
-    "module": "esm/index.js",
-    "types": "esm/index.d.ts",
+    "main": "index.js",
+    "files": [
+		"*.md",
+		"*.js"
+	],
     "scripts": {
-        "build": "yarn run build-cjs && yarn run build-esm",
-        "build-cjs": "rimraf ./lib && tsc",
-        "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
-        "watch": "tsc --outDir esm --module es2015 --watch"
-    },
-    "dependencies": {
-        "ra-core": "^3.5.1"
+        "deploy": "npm publish --access public",
+		"test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
-        "react",
-        "react-admin",
-        "admin-on-rest",
-        "translation"
+		"react",
+		"react-admin",
+		"ra-languague-pt-br",
+		"languague-pt-br",
+		"admin-on-rest",
+		"portugues",
+		"portuguese",
+		"translation"
     ],
     "author": "Gustavo Carletto",
     "license": "MIT",
