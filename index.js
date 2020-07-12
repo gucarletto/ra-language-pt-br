@@ -28,7 +28,6 @@ module.exports = {
 		open_menu: 'Abrir menu',
 		close_menu: 'Fechar menu',
 		unselect: 'Desmarcar',
-
 	},
 	boolean: {
 		true: 'Sim',
