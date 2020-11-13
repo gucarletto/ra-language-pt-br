@@ -10,6 +10,12 @@ Brazilian Portuguese messages for [react-admin](https://github.com/marmelab/reac
 npm install --save ra-language-pt-br
 ```
 
+or
+
+```sh
+yarn add ra-language-pt-br
+```
+
 ## Usage
 
 ```js
@@ -17,11 +23,11 @@ import ptBrMessages from 'ra-language-pt-br';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 
 const messages = {
-    'pt-br': ptBrMessages,
+  'pt-br': ptBrMessages,
 };
-const i18nProvider = polyglotI18nProvider(locale => messages[locale]);
+const i18nProvider = polyglotI18nProvider(locale => messages[locale], 'pt-br');
 
-<Admin locale="pt-br" i18nProvider={i18nProvider}>
+<Admin i18nProvider={i18nProvider}>
   ...
 </Admin>
 ```
