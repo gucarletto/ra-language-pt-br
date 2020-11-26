@@ -1,34 +1,47 @@
 {
-    "name": "ra-language-pt-br",
-    "version": "1.2.2",
-    "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/gucarletto/ra-language-pt-br.git"
-    },
-    "main": "index.js",
-    "files": [
-      "*.md",
-      "*.js"
-	  ],
-    "scripts": {
-      "deploy": "npm publish --access public",
-		  "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "react",
-      "react-admin",
-      "ra-languague-pt-br",
-      "languague-pt-br",
-      "admin-on-rest",
-      "portugues",
-      "portuguese",
-      "translation"
-    ],
-    "author": "Gustavo Carletto",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/gucarletto/ra-language-pt-br/issues"
-    },
-    "homepage": "https://github.com/gucarletto/ra-language-pt-br#readme"
+  "name": "ra-language-pt-br",
+  "version": "1.3.2",
+  "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucarletto/ra-language-pt-br.git"
+  },
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "scripts": {
+    "build": "yarn run build-cjs && yarn run build-esm",
+    "build-cjs": "rimraf ./lib && tsc",
+    "build-esm": "rimraf ./esm && tsc --outDir esm --module es2015",
+    "deploy": "npm publish ./esm"
+  },
+  "files": [
+    "*.md",
+    "lib",
+    "esm",
+    "src"
+  ],
+  "keywords": [
+    "react",
+    "react-admin",
+    "ra-languague-pt-br",
+    "languague-pt-br",
+    "admin-on-rest",
+    "portugues",
+    "portuguese",
+    "translation"
+  ],
+  "author": "Gustavo Carletto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gucarletto/ra-language-pt-br/issues"
+  },
+  "homepage": "https://github.com/gucarletto/ra-language-pt-br#readme",
+  "dependencies": {
+    "ra-core": "^3.10.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  }
 }
