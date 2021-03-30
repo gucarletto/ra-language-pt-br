@@ -106,6 +106,7 @@ const ptBrMessages: TranslationMessages = {
       page_rows_per_page: 'Linhas por página:',
       next: 'Próxima',
       prev: 'Anterior',
+      skip_nav: 'Ir para o conteúdo',
     },
     sort: {
       sort_by: 'Ordernar por %{field} %{order}',
