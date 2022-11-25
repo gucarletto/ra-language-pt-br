@@ -6,30 +6,39 @@ const ptBrMessages: TranslationMessages = {
       add_filter: 'Adicionar filtro',
       add: 'Adicionar',
       back: 'Retornar',
-      bulk_actions:
-        '%{smart_count} selecionado |||| %{smart_count} selecionados',
+      bulk_actions: '%{smart_count} selecionado |||| %{smart_count} selecionados',
       cancel: 'Cancelar',
       clear_input_value: 'Limpar valor',
       clone: 'Duplicar',
       confirm: 'Confirmar',
       create: 'Criar',
+      create_item: 'Criar %{item}',
       delete: 'Remover',
       edit: 'Alterar',
       export: 'Exportar',
       list: 'Listar',
       refresh: 'Atualizar',
       remove_filter: 'Remover filtro',
+      remove_all_filters: 'Remover todos os filtros',
       remove: 'Remover',
       save: 'Salvar',
       search: 'Buscar',
+      select_all: 'Selecionar todos',
+      select_row: 'Select essa linha',
       show: 'Mostrar',
       sort: 'Ordenar',
       undo: 'Desfazer',
+      unselect: 'Desmarcar',
       expand: 'Expandir',
       close: 'Fechar',
       open_menu: 'Abrir menu',
       close_menu: 'Fechar menu',
-      unselect: 'Desmarcar',
+      update: 'Renovar',
+      move_up: 'Mover para cima',
+      move_down: 'Mover para baixo',
+      open: 'Abrir',
+      toggle_theme: 'Alternar tema',
+      select_columns: 'Colunas',
     },
     boolean: {
       true: 'Sim',
@@ -39,12 +48,12 @@ const ptBrMessages: TranslationMessages = {
     page: {
       create: 'Criar %{name}',
       dashboard: 'Dashboard',
-      edit: '%{name} #%{id}',
+      edit: '%{name} #%{recordRepresentation}',
       error: 'Ocorreu um problema',
       list: '%{name}',
       loading: 'Carregando',
       not_found: 'Não encontrado',
-      show: '%{name} #%{id}',
+      show: '%{name} #%{recordRepresentation}',
       empty: 'Sem %{name} ainda.',
       invite: 'Você quer adicionar um?',
     },
@@ -52,8 +61,7 @@ const ptBrMessages: TranslationMessages = {
       file: {
         upload_several:
           'Solte arquivos para upload, ou clique para selecionar um.',
-        upload_single:
-          'Solte um arquivo para upload, ou clique para selecioná-lo.',
+        upload_single: 'Solte um arquivo para upload, ou clique para selecioná-lo.',
       },
       image: {
         upload_several:
@@ -62,8 +70,7 @@ const ptBrMessages: TranslationMessages = {
           'Solte uma imagem para upload, ou clique para selecioná-la.',
       },
       references: {
-        all_missing:
-          'Não foi possível encontrar os dados de referência.',
+        all_missing: 'Não foi possível encontrar os dados de referência.',
         many_missing:
           'Pelo menos uma das referências associadas aparenta não estar mais disponível.',
         single_missing:
@@ -81,16 +88,20 @@ const ptBrMessages: TranslationMessages = {
         'Você tem certeza que quer remover isso %{name}? |||| Você tem certeza que quer remover estes %{smart_count} items?',
       bulk_delete_title:
         'Remover %{name} |||| Remover %{smart_count} %{name}',
+      bulk_update_content:
+        'Tem certeza que deseja atualiazar este %{name}? |||| Tem certeza que deseja atualizar estes %{smart_count} itens?',
+      bulk_update_title:
+        'Atualizar %{name} |||| Atualizar %{smart_count} %{name}',
       delete_content: 'Você tem certeza que quer remover este item?',
       delete_title: 'Remover %{name} #%{id}',
       details: 'Detalhes',
       error:
         'Ocorreu um erro no navegador e seu requisição não foi completada.',
-      invalid_form:
-        'O formulário não é válido. Por favor, verifique os erros',
+      invalid_form: 'O formulário não é válido. Por favor, verifique os erros',
       loading: 'A página está carregando, aguarde um momento',
       no: 'Não',
-      not_found: 'Você digitou uma URL errada, ou seguiu um link errado.',
+      not_found:
+        'Você digitou uma URL errada, ou seguiu um link errado.',
       yes: 'Sim',
       unsaved_changes:
         'Algumas de suas alteracões não foram salvas. Você tem certeza que quer ignorá-las?',
@@ -103,9 +114,15 @@ const ptBrMessages: TranslationMessages = {
       page_out_from_end: 'Fim da paginação',
       page_out_from_begin: 'A página não pode ser menor que 1',
       page_range_info: '%{offsetBegin}-%{offsetEnd} de %{total}',
-      page_rows_per_page: 'Linhas por página:',
+      partial_page_range_info:
+        '%{offsetBegin}-%{offsetEnd} de mais de %{offsetEnd}',
+      current_page: 'Página %{page}',
+      page: 'Ir para página %{page}',
+      first: 'Ir para primeira página',
+      last: 'Ir para ultima página',
       next: 'Próxima',
-      prev: 'Anterior',
+      previous: 'Anterior',
+      page_rows_per_page: 'Linhas por página:',
       skip_nav: 'Ir para o conteúdo',
     },
     sort: {
@@ -123,11 +140,9 @@ const ptBrMessages: TranslationMessages = {
       logout: 'Sair',
     },
     notification: {
-      updated:
-        'Elemento atualizado |||| %{smart_count} elementos atualizados',
+      updated: 'Elemento atualizado |||| %{smart_count} elementos atualizados',
       created: 'Elemento criado',
-      deleted:
-        'Elemento removido |||| %{smart_count} elementos removidos',
+      deleted: 'Elemento removido |||| %{smart_count} elementos removidos',
       bad_item: 'Elemento incorreto',
       item_doesnt_exist: 'O elemento não existe',
       http_error: 'Erro de comunicação com o servidor',
@@ -137,6 +152,7 @@ const ptBrMessages: TranslationMessages = {
         'Não foi possível carregar as traduções para a linguagem especificada',
       canceled: 'Ação cancelada',
       logged_out: 'Sua sessão foi finalizada, por favor reconecte.',
+      not_authorized: "Você não está autorizado a acessar este recurso.",
     },
     validation: {
       required: 'Obrigatório',
@@ -148,6 +164,35 @@ const ptBrMessages: TranslationMessages = {
       email: 'Deve ser um e-mail válido',
       oneOf: 'Deve ser um destes: %{options}',
       regex: 'Deve respeitar um formato específico (regexp): %{pattern}',
+    },
+    saved_queries: {
+      label: 'Consultas salvas',
+      query_name: 'Nome da consulta',
+      new_label: 'Salvar consulta atual...',
+      new_dialog_title: 'Salvar consulta atual como...',
+      remove_label: 'Remover consulta salva',
+      remove_label_with_name: 'Removee consulta "%{name}"',
+      remove_dialog_title: 'Remover consulta salva?',
+      remove_message:
+        'Tem certeza de que deseja remover esse item da sua lista de consultas salvas?',
+      help: 'Filtre a lista e salve esta consulta para mais tarde',
+    },
+    configurable: {
+      customize: 'Customizar',
+      configureMode: 'Configurar esta página',
+      Datagrid: {
+        unlabeled: 'Coluna sem rótulo #%{column}',
+      },
+      inspector: {
+        title: 'Inspetor',
+        content: 'Passe o mouse sobre os elementos da interface do usuário do aplicativo para configurá-los',
+        reset: 'Redefinir configurações',
+      },
+      SimpleList: {
+        primaryText: 'Texto primário',
+        secondaryText: 'Texto secundário',
+        tertiaryText: 'Texto terciário',
+      },
     },
   },
 };
