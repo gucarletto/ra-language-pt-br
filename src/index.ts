@@ -181,7 +181,7 @@ const ptBrMessages: TranslationMessages = {
       },
       SimpleForm: {
         title: 'Form',
-        unlabeled: 'Unlabeled input #%{input}',
+        unlabeled: 'Entrada sem rótulo #%{input}',
       },
       SimpleList: {
         title: 'Lista',
