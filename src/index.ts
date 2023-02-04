@@ -1,6 +1,6 @@
 import { TranslationMessages } from 'ra-core';
 
-const ptBrMessages: TranslationMessages = {
+const brazilianPortugueseMessages: TranslationMessages = {
   ra: {
     action: {
       add_filter: 'Adicionar filtro',
@@ -24,7 +24,7 @@ const ptBrMessages: TranslationMessages = {
       save: 'Salvar',
       search: 'Buscar',
       select_all: 'Selecionar todos',
-      select_row: 'Select essa linha',
+      select_row: 'Selecionar linha',
       show: 'Mostrar',
       sort: 'Ordenar',
       undo: 'Desfazer',
@@ -33,17 +33,17 @@ const ptBrMessages: TranslationMessages = {
       close: 'Fechar',
       open_menu: 'Abrir menu',
       close_menu: 'Fechar menu',
-      update: 'Renovar',
+      update: 'Atualizar',
       move_up: 'Mover para cima',
       move_down: 'Mover para baixo',
       open: 'Abrir',
-      toggle_theme: 'Alternar tema',
-      select_columns: 'Colunas',
+      toggle_theme: 'Alterar tema',
+      select_columns: 'Selecionar Colunas',
     },
     boolean: {
       true: 'Sim',
       false: 'Não',
-      null: '',
+      null: ' ',
     },
     page: {
       create: 'Criar %{name}',
@@ -89,7 +89,7 @@ const ptBrMessages: TranslationMessages = {
       bulk_delete_title:
         'Remover %{name} |||| Remover %{smart_count} %{name}',
       bulk_update_content:
-        'Tem certeza que deseja atualiazar este %{name}? |||| Tem certeza que deseja atualizar estes %{smart_count} itens?',
+        'Tem certeza que deseja atualizar este %{name}? |||| Tem certeza que deseja atualizar estes %{smart_count} itens?',
       bulk_update_title:
         'Atualizar %{name} |||| Atualizar %{smart_count} %{name}',
       delete_content: 'Você tem certeza que quer remover este item?',
@@ -197,4 +197,4 @@ const ptBrMessages: TranslationMessages = {
   },
 };
 
-export default ptBrMessages
+export default brazilianPortugueseMessages;
