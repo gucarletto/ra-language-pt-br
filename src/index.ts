@@ -1,18 +1,18 @@
 import { TranslationMessages } from 'ra-core';
 
-const ptBrMessages: TranslationMessages = {
+const brazilianPortugueseMessages: TranslationMessages = {
   ra: {
     action: {
       add_filter: 'Adicionar filtro',
       add: 'Adicionar',
       back: 'Retornar',
-      bulk_actions:
-        '%{smart_count} selecionado |||| %{smart_count} selecionados',
+      bulk_actions: '1 selecionado |||| %{smart_count} selecionados',
       cancel: 'Cancelar',
       clear_input_value: 'Limpar valor',
       clone: 'Duplicar',
       confirm: 'Confirmar',
       create: 'Criar',
+      create_item: 'Criar item',
       delete: 'Remover',
       edit: 'Alterar',
       export: 'Exportar',
@@ -22,19 +22,26 @@ const ptBrMessages: TranslationMessages = {
       remove: 'Remover',
       save: 'Salvar',
       search: 'Buscar',
+      select_all: 'Selecionar todos',
+      select_row: 'Selecionar linha',
       show: 'Mostrar',
       sort: 'Ordenar',
       undo: 'Desfazer',
+      unselect: 'Desmarcar',
       expand: 'Expandir',
       close: 'Fechar',
       open_menu: 'Abrir menu',
       close_menu: 'Fechar menu',
-      unselect: 'Desmarcar',
+      update: 'Atualizar',
+      move_up: 'Mover para cima',
+      move_down: 'Mover para baixo',
+      open: 'Abrir',
+      toggle_theme: 'Alterar tema',
     },
     boolean: {
       true: 'Sim',
       false: 'Não',
-      null: '',
+      null: ' ',
     },
     page: {
       create: 'Criar %{name}',
@@ -62,8 +69,7 @@ const ptBrMessages: TranslationMessages = {
           'Solte uma imagem para upload, ou clique para selecioná-la.',
       },
       references: {
-        all_missing:
-          'Não foi possível encontrar os dados de referência.',
+        all_missing: 'Não foi possível encontrar os dados de referência.',
         many_missing:
           'Pelo menos uma das referências associadas aparenta não estar mais disponível.',
         single_missing:
@@ -81,6 +87,10 @@ const ptBrMessages: TranslationMessages = {
         'Você tem certeza que quer remover isso %{name}? |||| Você tem certeza que quer remover estes %{smart_count} items?',
       bulk_delete_title:
         'Remover %{name} |||| Remover %{smart_count} %{name}',
+      bulk_update_content:
+        'Você tem certeza que quer atualizar isso %{name}? |||| Você tem certeza que quer atualizar estes %{smart_count} items?',
+      bulk_update_title:
+      'Atualiza %{name} |||| Atualizar %{smart_count} %{name}',
       delete_content: 'Você tem certeza que quer remover este item?',
       delete_title: 'Remover %{name} #%{id}',
       details: 'Detalhes',
@@ -103,9 +113,15 @@ const ptBrMessages: TranslationMessages = {
       page_out_from_end: 'Fim da paginação',
       page_out_from_begin: 'A página não pode ser menor que 1',
       page_range_info: '%{offsetBegin}-%{offsetEnd} de %{total}',
-      page_rows_per_page: 'Linhas por página:',
+      partial_page_range_info:
+        '%{offsetBegin}-%{offsetEnd} de mais de %{offsetEnd}',
+      current_page: 'Página %{page}',
+      page: 'Ir para %{page}',
+      first: 'Primeira página',
+      last: 'Última página',
       next: 'Próxima',
-      prev: 'Anterior',
+      previous: 'Anterior',
+      page_rows_per_page: 'Linhas por página:',
       skip_nav: 'Ir para o conteúdo',
     },
     sort: {
@@ -137,6 +153,7 @@ const ptBrMessages: TranslationMessages = {
         'Não foi possível carregar as traduções para a linguagem especificada',
       canceled: 'Ação cancelada',
       logged_out: 'Sua sessão foi finalizada, por favor reconecte.',
+      not_authorized: "Você não está autorizado a acessar esse recurso.",
     },
     validation: {
       required: 'Obrigatório',
@@ -149,7 +166,19 @@ const ptBrMessages: TranslationMessages = {
       oneOf: 'Deve ser um destes: %{options}',
       regex: 'Deve respeitar um formato específico (regexp): %{pattern}',
     },
+    saved_queries: {
+      label: 'Consultas salvas',
+      query_name: 'Nome',
+      new_label: 'Salvar consulta atual...',
+      new_dialog_title: 'Salvar consulta atual como',
+      remove_label: 'Remover consulta salva',
+      remove_label_with_name: 'Remover consulta "%{name}"',
+      remove_dialog_title: 'Remover consulta salva?',
+      remove_message:
+        'Você tem certeza que quer remover esse ite, da lista de consultas salvas?',
+      help: 'Filtrar e salvar essa consulta para depois',
+    },
   },
 };
 
-export default ptBrMessages
+export default brazilianPortugueseMessages;
