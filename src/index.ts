@@ -39,6 +39,7 @@ const brazilianPortugueseMessages: TranslationMessages = {
       open: 'Abrir',
       toggle_theme: 'Alterar tema',
       select_columns: 'Selecionar Colunas',
+      clear_array_input: 'Limpar lista',
     },
     boolean: {
       true: 'Sim',
@@ -105,6 +106,8 @@ const brazilianPortugueseMessages: TranslationMessages = {
       yes: 'Sim',
       unsaved_changes:
         'Algumas de suas alteracões não foram salvas. Você tem certeza que quer ignorá-las?',
+      auth_error: "Erro na autorização",
+      clear_array_input: "Tem certeza que deseja limpar toda a lista?",
     },
     navigation: {
       no_results: 'Nenhum resultado encontrado',
@@ -182,17 +185,25 @@ const brazilianPortugueseMessages: TranslationMessages = {
       configureMode: 'Configurar esta página',
       Datagrid: {
         unlabeled: 'Coluna sem rótulo #%{column}',
+        title: '#%{title}',
       },
       inspector: {
         title: 'Inspetor',
         content: 'Passe o mouse sobre os elementos da interface do usuário do aplicativo para configurá-los',
         reset: 'Redefinir configurações',
+        hideAll: 'Esconder tudo',
+        showAll: 'Exibir tudo',
       },
       SimpleList: {
         primaryText: 'Texto primário',
         secondaryText: 'Texto secundário',
         tertiaryText: 'Texto terciário',
+        title: '#%{title}',
       },
+      SimpleForm: {
+        title: '#%{title}',
+        unlabeled: 'Sem rótulo #%{column}',
+      }
     },
   },
 };
