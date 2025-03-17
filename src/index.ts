@@ -145,7 +145,7 @@ const brazilianPortugueseMessages: TranslationMessages = {
       logout: 'Sair',
     },
     notification: {
-      application_update_available: 'Uma nova versão encontrada.',
+      application_update_available: 'Uma nova versão está disponível.',
       updated: 'Elemento atualizado |||| %{smart_count} elementos atualizados',
       created: 'Elemento criado',
       deleted: 'Elemento removido |||| %{smart_count} elementos removidos',
