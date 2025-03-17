@@ -1,6 +1,6 @@
 {
   "name": "ra-language-pt-br",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "repository": {
     "type": "git",
