@@ -100,7 +100,7 @@ const brazilianPortugueseMessages: TranslationMessages = {
       delete_content: 'Você tem certeza que quer remover este item?',
       delete_title: 'Remover %{name} #%{id}',
       details: 'Detalhes',
-      error: 'Ocorreu um erro no navegador e seu requisição não foi completada.',
+      error: 'Ocorreu um erro no navegador e sua requisição não foi completada.',
       invalid_form: 'O formulário não é válido. Por favor, verifique os erros',
       loading: 'A página está carregando, aguarde um momento',
       no: 'Não',
