@@ -1,6 +1,6 @@
 {
   "name": "ra-language-pt-br",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Brazilian Portuguese messages for react-admin, the frontend framework for building admin applications on top of REST/GraphQL services",
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/gucarletto/ra-language-pt-br#readme",
   "dependencies": {
-    "ra-core": "^4.12.2"
+    "ra-core": "^5.6.3"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
